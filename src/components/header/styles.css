@@ -4,9 +4,17 @@
     color: white;
     padding-left: 20px;
     padding-top: 60px;
+    margin-bottom: 20px;
 }
 
-.header > p {
-    font-size: 40px;
+#nameContainer{
+    display: flex;
+    align-items: flex-end;
+}
+
+.header > #nameContainer > p {
+    font-size: 50px;
     margin: 0;
+    padding-bottom: 0; /* Remove the default bottom padding */
+    line-height: 1; 
 }

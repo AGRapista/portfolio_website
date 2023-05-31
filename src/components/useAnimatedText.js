@@ -5,6 +5,7 @@ const useAnimatedText = () => {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     const handleMouseOver = (event) => {
+      console.log("firing")
       let iterations = 0;
       const interval = setInterval(() => {
         event.target.innerText = event.target.innerText.split("")

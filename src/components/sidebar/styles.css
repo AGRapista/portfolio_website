@@ -1,7 +1,63 @@
-.sidebar{
+.sidebar {
     padding-left: 20px;
     height: 500px;
     width: 300px;
     color: white;
     font-size: 25px;
+}
+
+.chainParent {
+    position: relative;
+}
+
+.chains {
+    position: absolute;
+}
+
+.chainLink {
+    position: absolute;
+    margin-top: 10px;
+    left: 31px;
+    height: 120px;
+    width: 2.5px;
+    background-color: rgb(114, 114, 114);
+}
+
+.chainContainer {
+    height: 53px;
+    width: 20px;
+}
+
+.chain{
+    position: relative;
+}
+
+.outerChain {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 20px;
+    width:  20px;
+    border-radius: 50px;
+    background-color: rgb(153, 153, 153);
+}
+
+.innerChain {
+    position: absolute;
+    top: 13.5px;
+    left: 13.5px;
+    height: 13px;
+    width:  13px;
+    border-radius: 50px;
+    background-color: #181818;
+}
+
+.chainIndicator {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    height: 8px;
+    width:  8px;
+    border-radius: 50px;
+    background-color: #181818; 
 }
