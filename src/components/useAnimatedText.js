@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 const useAnimatedText = () => {
   useEffect(() => {
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ<>/&$_=";
 
     const handleMouseOver = (event) => {
       console.log("firing")
@@ -13,7 +13,7 @@ const useAnimatedText = () => {
             if (index < iterations) {
               return event.target.dataset.value[index];
             }
-            return letters[Math.floor(Math.random() * 26)];
+            return letters[Math.floor(Math.random() * 33)];
           })
           .join("");
 

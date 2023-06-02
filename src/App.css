@@ -1,12 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Rajdhani&display=swap');
 body {
   background-color: #181818;
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 
 html *
 {
-  font-family: 'Space Mono', monospace !important;
+  font-family: 'Rajdhani', monospace !important;
 }
 

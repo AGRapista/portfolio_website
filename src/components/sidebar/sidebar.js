@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles.css';
 
-const Chain = () => {
+const Chain = ({page, num}) => {
   return (
     <div className="chain">
       <div className="outerChain"></div>
       <div className="innerChain"></div>
-      <div className="chainIndicator"></div>
+      <div className={`${page === num ? 'chainIndicator' : ''}`}></div>
     </div>
   )
 }
@@ -17,22 +17,27 @@ const ChainLink = () =>{
   )
 }
 
-const Sidebar = () => {
+const Sidebar = ({ page, setPage }) => {
+
+  const nextPage = (num) => {
+    setPage(num);
+  };
+
   return (
     <div className="col-4 sidebar">
       <div className="row">
         <div className="col-2 chainParent">
           <ChainLink/>
           <div className="chains">
-            <div className="chainContainer"><Chain/></div>
-            <div className="chainContainer"><Chain/></div>
-            <div className="chainContainer"><Chain/></div>
+            <div className="chainContainer"><Chain page = {page} num = {0}/></div>
+            <div className="chainContainer"><Chain page = {page} num = {1}/></div>
+            <div className="chainContainer"><Chain page = {page} num = {2}/></div>
           </div>
         </div>
         <div className="col-10">
-          <p className="animatedText" data-value="About me">About me</p>
-          <p className="animatedText" data-value="Projects">Projects</p>
-          <p className="animatedText" data-value="Info">Info</p>
+          <p className={`animatedText ${page === 0 ? 'active' : ''}`} data-value="About me" onClick={() => nextPage(0)}>About me</p>
+          <p className={`animatedText ${page === 1 ? 'active' : ''}`} data-value="Projects" onClick={() => nextPage(1)}>Projects</p>
+          <p className={`animatedText ${page === 2 ? 'active' : ''}`} data-value="Contact" onClick={() => nextPage(2)}>Contact</p>
         </div>
       </div>
     </div>

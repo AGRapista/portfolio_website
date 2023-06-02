@@ -54,10 +54,18 @@
 
 .chainIndicator {
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 16.49px;
+    left: 16.49px;
     height: 8px;
     width:  8px;
     border-radius: 50px;
-    background-color: #181818; 
+    background-color: rgb(255, 255, 255); 
+}
+
+p {
+    cursor: pointer;
+}
+
+.active {
+    color: rgb(171, 255, 251);
 }
