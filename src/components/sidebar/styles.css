@@ -4,6 +4,7 @@
     width: 300px;
     color: white;
     font-size: 25px;
+    z-index: 2;
 }
 
 .chainParent {

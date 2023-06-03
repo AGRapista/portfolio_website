@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Rajdhani&display=swap');
 body {
   background-color: #181818;
+  overflow: hidden;
   /* margin-left: 40px; */
 }
 
