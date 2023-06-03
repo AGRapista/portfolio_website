@@ -12,15 +12,17 @@ function App() {
   const animatedText = useAnimatedText();
 
   const [page, setPage] = useState(0)
+  const [name, setName] = useState("A.G. MATTHEW R.")
+  const [desc, setDesc] = useState("Software Developer")
 
   return (
     <div className="row mainContainer">
       <main>
-        <Header/>
+        <Header name={name} description={desc}/>
         <div className="row">
           <Sidebar page={page} setPage={setPage}/>
           {page === 0 && <AboutPage />}
-          {page === 1 && <ProjectsPage />}
+          {page === 1 && <ProjectsPage setName={setName} setDesc={setDesc}/>}
         </div>
       </main>
     </div>
