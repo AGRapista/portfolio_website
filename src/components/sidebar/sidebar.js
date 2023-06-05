@@ -32,12 +32,14 @@ const Sidebar = ({ page, setPage }) => {
             <div className="chainContainer"><Chain page = {page} num = {0}/></div>
             <div className="chainContainer"><Chain page = {page} num = {1}/></div>
             <div className="chainContainer"><Chain page = {page} num = {2}/></div>
+            <div className="chainContainer"><Chain page = {page} num = {3}/></div>
           </div>
         </div>
         <div className="col-10">
           <p className={`animatedText ${page === 0 ? 'active' : ''}`} data-value="About me" onClick={() => nextPage(0)}>About me</p>
           <p className={`animatedText ${page === 1 ? 'active' : ''}`} data-value="Projects" onClick={() => nextPage(1)}>Projects</p>
           <p className={`animatedText ${page === 2 ? 'active' : ''}`} data-value="Contact" onClick={() => nextPage(2)}>Contact</p>
+          <p className={`animatedText ${page === 3 ? 'active' : ''}`} data-value="Practicum" onClick={() => nextPage(3)}>Practicum</p>
         </div>
       </div>
     </div>

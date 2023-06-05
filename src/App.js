@@ -5,6 +5,7 @@ import Header from './components/header/header';
 import Sidebar from './components/sidebar/sidebar';
 import AboutPage from './components/body/about';
 import ProjectsPage from './components/body/projects';
+import Practicum from './components/practicum';
 
 import useAnimatedText from './components/useAnimatedText';
 
@@ -23,6 +24,7 @@ function App() {
           <Sidebar page={page} setPage={setPage}/>
           {page === 0 && <AboutPage />}
           {page === 1 && <ProjectsPage setName={setName} setDesc={setDesc}/>}
+          {page === 3 && <Practicum/>}
         </div>
       </main>
     </div>
