@@ -17,14 +17,14 @@ const ChainLink = () =>{
   )
 }
 
-const Sidebar = ({ page, setPage }) => {
+const Sidebar = ({ page, setPage, sideBarVisible }) => {
 
   const nextPage = (num) => {
     setPage(num);
   };
 
   return (
-    <div className="col-4 sidebar">
+<div className="col-4 sidebar" style={{ display: sideBarVisible ? "block" : "none" }}>
       <div className="row">
         <div className="col-2 chainParent">
           <ChainLink/>

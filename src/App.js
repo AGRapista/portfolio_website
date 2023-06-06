@@ -16,6 +16,7 @@ function App() {
   const [page, setPage] = useState(0)
   const [name, setName] = useState("A.G. MATTHEW R.")
   const [desc, setDesc] = useState("Software Developer")
+  const [sideBarVisible, setSidebarV] = useState("true")
 
   return (
     <div>
@@ -23,9 +24,9 @@ function App() {
         <main>
           <Header name={name} description={desc}/>
           <div className="row">
-            <Sidebar page={page} setPage={setPage}/>
+            <Sidebar page={page} setPage={setPage} sideBarVisible={sideBarVisible}/>
             {page === 0 && <AboutPage />}
-            {page === 1 && <ProjectsPage setName={setName} setDesc={setDesc}/>}
+            {page === 1 && <ProjectsPage setName={setName} setDesc={setDesc} setSidebarV={setSidebarV}/>}
             {page === 2 && <Practicum/>}
           </div>
         </main>

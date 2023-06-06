@@ -7,7 +7,7 @@ import project3img from './images/musings.PNG';
 import project4img from './images/datawiz.PNG';
 import project5img from './images/wizflix.png';
 
-const ProjectsPage = ({setName, setDesc}) => {
+const ProjectsPage = ({setName, setDesc, setSidebarV}) => {
   const [mouseDownAt, setMouseDownAt] = useState(0);
   const [translatePos, setTranslatePos] = useState(0);
   const [mouseDelta, setMouseDelta] = useState(0);
@@ -55,6 +55,7 @@ const ProjectsPage = ({setName, setDesc}) => {
           setFullscreenImageSrc(imageSrc);
           changeHeader(name, desc);
           hideImageTrack();
+          setSidebarV(false);
         }
       }, 5);
     }
@@ -65,6 +66,7 @@ const ProjectsPage = ({setName, setDesc}) => {
     setFullscreenImageSrc('');
     changeHeader("A.G. MATTHEW R.", "Software Developer")
     showImageTrack()
+    setSidebarV(true);
   };
 
   const changeHeader = (name, desc) => {
