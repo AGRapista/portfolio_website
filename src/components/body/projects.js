@@ -19,15 +19,18 @@ const ProjectsPage = ({setName, setDesc}) => {
   const [fullscreenImageSrc, setFullscreenImageSrc] = useState('');
 
   const handleMouseDown = (e) => {
+    console.log("mouse down")
     setMouseDownAt(e.clientX);
   };
 
   const handleMouseUp = (e) => {
+    console.log("mouse up")
     setMouseDownAt(0);
     setPrevPercentage(nextPercentage);
   };
 
   const handleMouseMove = (e) => {
+    console.log("moving", mouseDownAt)
     if (mouseDownAt === 0) return;
 
     setMouseDelta(parseFloat(mouseDownAt) - e.clientX);
@@ -42,18 +45,32 @@ const ProjectsPage = ({setName, setDesc}) => {
     setIsFullscreen(true);
     setFullscreenImageSrc(imageSrc)
     changeHeader(name, desc)
+    hideImageTrack()
   };
 
   const closeFullscreen = () => {
     setIsFullscreen(false);
     setFullscreenImageSrc('');
     changeHeader("A.G. MATTHEW R.", "Software Developer")
+    showImageTrack()
   };
 
   const changeHeader = (name, desc) => {
       setName(name)
       setDesc(desc)
       console.log("changing header to ", name, desc)
+  }
+
+  const hideImageTrack = () => {
+    const imageTrack = document.getElementById("image-track")
+
+    imageTrack.style.display = "none"
+  }
+
+  const showImageTrack = () => {
+    const imageTrack = document.getElementById("image-track")
+
+    imageTrack.style.display = "flex"
   }
 
   useEffect(() => {
@@ -89,6 +106,7 @@ const ProjectsPage = ({setName, setDesc}) => {
         onMouseMove={handleMouseMove}
         style={{ transform: `translate(${translatePos}%, -50%)` }}
       >
+        <div className="arrowContainer"><div className="leftArrow left"></div></div>
         <img className="image no-select" src={project1img} alt="Project 1" draggable="false" onClick={() => openFullscreen(project1img, names[0], descs[0])} />
         <img className="image no-select" src={project2img} alt="Project 2" draggable="false" onClick={() => openFullscreen(project2img, names[1], descs[1])} />
         <img className="image no-select" src={project3img} alt="Project 3" draggable="false" onClick={() => openFullscreen(project3img, names[2], descs[2])} />

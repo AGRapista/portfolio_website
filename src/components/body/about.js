@@ -4,6 +4,7 @@ import "./styles.css";
 import logo from "./images/github_logo.png";
 import cv from "./images/cv.png";
 import email_png from "./images/email.png";
+import li from "./images/linkedin.png";
 
 const AboutPage = () => {
 
@@ -54,6 +55,13 @@ const AboutPage = () => {
               style={{ color: "rgb(171, 255, 251)", "animation-fill-mode": "forwards",
                       "animation-delay": "4s", opacity: 0, marginTop: "40px"}}>
               Get to know me better </h3>
+
+              <a href="https://www.linkedin.com/in/a-g-rapista-584683232/" target="_blank">
+                <button className="fade-in-skill" style={{margin: "5px", borderRadius:"10px", border: "none", backgroundColor: "rgb(40, 193, 248, 0)", animationDelay: "5s"}}>
+                  <img src={li} alt="Button Image" style={{width: "40px", height: "40px"}} />
+                </button>
+              </a>
+
               <a href="mailto:amrapista@live.mcl.edu.ph">
                 <button className="fade-in-skill" style={{margin: "5px", borderRadius:"10px", border: "none", backgroundColor: "rgb(40, 193, 248)", animationDelay: "5s"}}>
                   <img src={email_png} alt="Button Image" style={{width: "40px", height: "40px"}} />
