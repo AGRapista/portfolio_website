@@ -7,6 +7,7 @@
     color: white;
     font-size: 25px;
     z-index: 2;
+    
 }
 
 .chainParent {
@@ -23,12 +24,13 @@
     left: 31px;
     height: 120px;
     width: 2.5px;
-    background-color: rgb(114, 114, 114);
+    /* background-color: rgb(114, 114, 114); */
 }
 
 .chainContainer {
     height: 53px;
     width: 20px;
+    margin: 0;
 }
 
 .chain{
@@ -36,23 +38,26 @@
 }
 
 .outerChain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 10px;
     left: 10px;
     height: 20px;
     width:  20px;
     border-radius: 50px;
-    background-color: rgb(153, 153, 153);
+    /* background-color: rgb(153, 153, 153); */
 }
 
 .innerChain {
-    position: absolute;
-    top: 13.5px;
-    left: 13.5px;
+    position: relative;
+    /* top: 13.5px;
+    left: 13.5px; */
     height: 13px;
     width:  13px;
     border-radius: 50px;
-    background-color: #181818;
+    /* background-color: #181818; */
 }
 
 .chainIndicator {

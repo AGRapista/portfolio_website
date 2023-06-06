@@ -4,8 +4,8 @@ import './styles.css';
 const Chain = ({page, num}) => {
   return (
     <div className="chain">
-      <div className="outerChain"></div>
-      <div className="innerChain"></div>
+      {/* <div className="outerChain">
+      <div className="innerChain"></div></div> */}
       <div className={`${page === num ? 'chainIndicator' : ''}`}></div>
     </div>
   )

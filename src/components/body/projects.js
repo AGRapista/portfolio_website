@@ -18,14 +18,18 @@ const ProjectsPage = ({setName, setDesc}) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [fullscreenImageSrc, setFullscreenImageSrc] = useState('');
 
+  const [canExpand, setCanExpand] = useState(true);
+
   const handleMouseDown = (e) => {
     console.log("mouse down")
+    setCanExpand(false);
     setMouseDownAt(e.clientX);
   };
 
   const handleMouseUp = (e) => {
-    console.log("mouse up")
     setMouseDownAt(0);
+    setCanExpand(true);
+    console.log("mouse up", canExpand)
     setPrevPercentage(nextPercentage);
   };
 
@@ -38,14 +42,22 @@ const ProjectsPage = ({setName, setDesc}) => {
     setPercentage((mouseDelta / maxDelta) * -100);
     setNextPercentage(Math.max(Math.min(parseFloat(prevPercentage) + percentage, 0), -100));
     setTranslatePos(nextPercentage);
-    console.log(nextPercentage);
+    // console.log(mouseDelta, maxDelta, percentage, translatePos, nextPercentage);
+    console.log("finished moving")
   };
 
   const openFullscreen = (imageSrc, name, desc) => {
-    setIsFullscreen(true);
-    setFullscreenImageSrc(imageSrc)
-    changeHeader(name, desc)
-    hideImageTrack()
+    console.log("opening", canExpand);
+    if (canExpand) {
+      setTimeout(() => {
+        if (canExpand) {
+          setIsFullscreen(true);
+          setFullscreenImageSrc(imageSrc);
+          changeHeader(name, desc);
+          hideImageTrack();
+        }
+      }, 5);
+    }
   };
 
   const closeFullscreen = () => {
@@ -94,7 +106,7 @@ const ProjectsPage = ({setName, setDesc}) => {
     <div className="col-8 project-page">
       {isFullscreen && (
         <div className="fullscreen-overlay" onClick={closeFullscreen}>
-          <img className="fullscreen-image" src={fullscreenImageSrc} alt="Fullscreen" draggable="false" />
+          <img className="fullscreen-image no-select" draggable="false" src={fullscreenImageSrc} alt="Fullscreen" draggable="false" />
         </div>
       )}
       <div
@@ -105,7 +117,8 @@ const ProjectsPage = ({setName, setDesc}) => {
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
         style={{ transform: `translate(${translatePos}%, -50%)` }}
-      >
+      > 
+        <div className="no-select" draggable="false" ><h2>What I've developed so far</h2></div>
         <div className="arrowContainer"><div className="leftArrow left"></div></div>
         <img className="image no-select" src={project1img} alt="Project 1" draggable="false" onClick={() => openFullscreen(project1img, names[0], descs[0])} />
         <img className="image no-select" src={project2img} alt="Project 2" draggable="false" onClick={() => openFullscreen(project2img, names[1], descs[1])} />
