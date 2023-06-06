@@ -63,14 +63,14 @@ const AboutPage = () => {
               </a>
 
               <a href="mailto:amrapista@live.mcl.edu.ph">
-                <button className="fade-in-skill" style={{margin: "5px", borderRadius:"10px", border: "none", backgroundColor: "rgb(40, 193, 248)", animationDelay: "5s"}}>
-                  <img src={email_png} alt="Button Image" style={{width: "40px", height: "40px"}} />
+                <button className="fade-in-skill" style={{width: "45px", height: "40px", margin: "5px", borderRadius:"10px", border: "none", backgroundColor: "rgb(122, 247, 94)", animationDelay: "5s"}}>
+                  <img src={email_png} alt="Button Image" style={{width: "30px", height: "30px"}} />
                 </button>
               </a>
 
               <a href="https://docs.google.com/document/d/1xrkpQuVCz3JoIDmfAOXWdG0YDzDLv2kDRqMs_q6ObQE/edit?usp=sharing" target="_blank">
-                <button className="fade-in-skill" style={{ margin: "5px", borderRadius:"10px", border: "none", backgroundColor: "rgb(66, 133, 244)", animationDelay: "5s"}}>
-                    <img src={cv} alt="Button Image" style={{width: "40px", height: "40px"}} />
+                <button className="fade-in-skill" style={{width: "45px", height: "40px", margin: "5px", borderRadius:"10px", border: "none", backgroundColor: "rgb(66, 133, 244)", animationDelay: "5s"}}>
+                    <img src={cv} alt="Button Image" style={{width: "30px", height: "30px"}} />
                   </button>
               </a>
               <a href="https://github.com/AGRapista" target="_blank">
