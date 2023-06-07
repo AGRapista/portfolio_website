@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Tilt from "react-parallax-tilt";
 import './styles.css';
 
 import project1img from './images/fitness_instructor.png';
@@ -110,7 +111,9 @@ const ProjectsPage = ({setName, setDesc, setSidebarV}) => {
     <div className="col-8 project-page">
       {isFullscreen && (
         <div className="fullscreen-overlay no-select" onClick={closeFullscreen}>
-          <img className="fullscreen-image no-select" draggable="false" src={fullscreenImageSrc} alt="Fullscreen" draggable="false" />
+          <Tilt className="tiltContainerFull no-select" glareEnable={true} glareColor={"rgb(171, 255, 251)"} tiltReverse={true} tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
+            <img className="fullscreen-image no-select" draggable="false" src={fullscreenImageSrc} alt="Fullscreen" draggable="false" />
+          </Tilt>
         </div>
       )}
       <div
@@ -126,7 +129,9 @@ const ProjectsPage = ({setName, setDesc, setSidebarV}) => {
         <div className="no-select" draggable="false" ><h2>What I've developed so far</h2></div>
         <div className="arrowContainer"><div className="leftArrow left"></div></div>
         { projectImages.map((projectImg, i) => {   
-          return <img className="image no-select" src={projectImg} alt={`Project ${i}`} draggable="false" onClick={() => openFullscreen(projectImg, names[i], descs[i])} /> 
+          return <Tilt className="tiltContainer" glareEnable={true} glareColor={"rgb(171, 255, 251)"} tiltReverse={true} tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
+            <img className="image no-select" src={projectImg} alt={`Project ${i}`} draggable="false" onClick={() => openFullscreen(projectImg, names[i], descs[i])} /> 
+          </Tilt>
         })
         }
         {/* <img className="image no-select" src={project1img} alt="Project 1" draggable="false" onClick={() => openFullscreen(project1img, names[0], descs[0])} />

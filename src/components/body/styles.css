@@ -98,13 +98,23 @@ h2, h3 {
     z-index: 50;
 }
 
-#image-track > .image {
+#image-track > .tiltContainer > .image {
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
     object-position: 100% 50%;
     border-radius: 10px;
     /* box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2); */
+}
+
+.tiltContainer {
+    width: 40vmin;
+    height: 56vmin;
+}
+
+.tiltContainerFull {
+    width: 1200px;
+    height: 600px;
 }
 
 .no-select {
