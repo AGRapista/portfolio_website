@@ -163,7 +163,7 @@ h2, h3 {
 
 .about-page {
     overflow-y: scroll;
-    max-height: 800px;
+    height: 90vh;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none; 
 }

@@ -20,7 +20,7 @@ function Flow() {
         p5.noiseDetail(1)
 
 
-        var density = 100;
+        var density = 20;
         var space = width / density;
 
         for (var x = 0; x < width; x += space) {
