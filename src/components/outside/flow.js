@@ -33,14 +33,14 @@ function Flow() {
 
       p5.draw = () => {
         p5.noStroke();
-        p5.fill("rgb(171, 255, 251)");
+        p5.fill(0);
 
         for (var i = 0; i < points.length; i++) {
             var angle = p5.map(p5.noise(points[i].x * mult, points[i].y * mult), 0, 1, 0, 720)
 
             points[i].add(p5.createVector(p5.cos(angle), p5.sin(angle)))
 
-            p5.ellipse(points[i].x, points[i].y, 0.2);
+            p5.ellipse(points[i].x, points[i].y, 0.3);
         }
       };
     });
