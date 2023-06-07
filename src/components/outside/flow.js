@@ -3,8 +3,8 @@ import p5 from "p5";
 import "./styles.css";
 
 function Flow() {
-  const width = window.innerWidth;
-  const height = window.innerHeight;
+  const width = window.innerWidth-50;
+  const height = window.innerHeight-50;
 
   useEffect(() => {
     const sketch = new p5((p5) => {
@@ -23,8 +23,8 @@ function Flow() {
         var density = 20;
         var space = width / density;
 
-        for (var x = 0; x < width; x += space) {
-            for (var y = 0; y < height; y += space) {
+        for (var x = 100; x < width; x += space) {
+            for (var y = 100; y < height; y += space) {
                 var p = p5.createVector(x + p5.random(-10, 10), y + p5.random(-10, 10));
                 points.push(p); 
             }
@@ -33,14 +33,14 @@ function Flow() {
 
       p5.draw = () => {
         p5.noStroke();
-        p5.fill(255);
+        p5.fill("rgb(171, 255, 251)");
 
         for (var i = 0; i < points.length; i++) {
             var angle = p5.map(p5.noise(points[i].x * mult, points[i].y * mult), 0, 1, 0, 720)
 
             points[i].add(p5.createVector(p5.cos(angle), p5.sin(angle)))
 
-            p5.ellipse(points[i].x, points[i].y, 0.5);
+            p5.ellipse(points[i].x, points[i].y, 0.2);
         }
       };
     });

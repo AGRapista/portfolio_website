@@ -97,7 +97,7 @@ const ProjectsPage = ({setName, setDesc, setSidebarV}) => {
     }
   }, [nextPercentage]);
 
-  const names = ["Fitness Instructor", "EmpPred", "Musings", "DataWiz", "WizFlix"]
+  const names = ["ReactFitness", "EmpPred", "Musings", "DataWiz", "WizFlix"]
   const descs = [
       "(mobile application, computer vision) — a virtual workout assistant utilizing computer vision pose estimation models (tensorflow) built using the flutter framework.",
       "(web application, data mining application) — Job prediction web application utilizing supervised and unsupervised learning algorithms. Built using Python Flask",

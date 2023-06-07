@@ -29,9 +29,9 @@ function App() {
           </div>
         </main>
       </div>
-      {/* <div className="overlap outsideDecor">
+      <div className="overlap outsideDecor">
         <Flow/>
-      </div> */}
+      </div>
     </div>
   );
 }
