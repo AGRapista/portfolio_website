@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.css';
 
+import Header from '../header/header';
+
 const Chain = ({page, num}) => {
   return (
     <div className="chain">
@@ -17,15 +19,18 @@ const ChainLink = () =>{
   )
 }
 
-const Sidebar = ({ page, setPage, sideBarVisible }) => {
+const Sidebar = ({ page, setPage, name, desc, sideBarVisible }) => {
 
   const nextPage = (num) => {
     setPage(num);
   };
 
   return (
-<div className="col-4 sidebar" style={{ display: sideBarVisible ? "block" : "none" }}>
+<div className="col-4 sidebar" >
       <div className="row">
+        <Header name={name} description={desc}/>
+      </div>
+      <div className="row" style={{ display: sideBarVisible ? "block" : "none" }}>
         <div className="col-2 chainParent">
           <ChainLink/>
           <div className="chains">
@@ -34,10 +39,10 @@ const Sidebar = ({ page, setPage, sideBarVisible }) => {
             <div className="chainContainer"><Chain page = {page} num = {2}/></div>
           </div>
         </div>
-        <div className="col-10">
-          <p className={`animatedText no-select ${page === 0 ? 'active' : ''}`} data-value="About me" onClick={() => nextPage(0)}>About me</p>
-          <p className={`animatedText no-select  ${page === 1 ? 'active' : ''}`} data-value="Projects" onClick={() => nextPage(1)}>Projects</p>
-          <p className={`animatedText no-select  ${page === 2 ? 'active' : ''}`} data-value="Practicum" onClick={() => nextPage(2)}>Practicum</p>
+        <div className="col-10" style={{ display: sideBarVisible ? "block" : "none" }}>
+          <p className={`sidebarSelection animatedText no-select ${page === 0 ? 'active' : ''}`} data-value="About me" onClick={() => nextPage(0)}>About me</p>
+          <p className={`sidebarSelection animatedText no-select  ${page === 1 ? 'active' : ''}`} data-value="Projects" onClick={() => nextPage(1)}>Projects</p>
+          <p className={`sidebarSelection animatedText no-select  ${page === 2 ? 'active' : ''}`} data-value="Practicum" onClick={() => nextPage(2)}>Practicum</p>
         </div>
       </div>
     </div>

@@ -19,4 +19,9 @@
     margin: 0;
     padding-bottom: 0; /* Remove the default bottom padding */
     line-height: 1; 
+    /* width: 100px; */
+}
+
+.subName{
+    width: 12vw;
 }

@@ -4,7 +4,7 @@ import useAnimatedText from '../useAnimatedText';
 import metacraftersImg1 from './images/metacrafters1.PNG';
 import metacraftersImg2 from './images/metacrafters2.PNG';
 import metacraftersImg3 from './images/metacrafters3.PNG';
-import metacraftersImg4 from './images/metacrafters4.PNG';
+import metacraftersImg4 from './images/metacrafters4_whole.png';
 import metacraftersImg5 from './images/metacrafters5.PNG';
 import metacraftersImg6 from './images/metacrafters6.PNG';
 import mernProject1 from './images/mern.PNG';
@@ -16,7 +16,7 @@ const Practicum = () => {
     return (
         <div className="col-8 about-page">
             {/* <iframe src={docs_url} width="100%" height="800px"></iframe> */}
-            <div className="row">
+            <div className="row" style={{marginTop: "15%"}}>
                 <div className="col-12">
                     <h2 className="animatedText" data-value="Overview of the Practicum Engagement" style={{ color: "rgb(171, 255, 251)" }}>
                         Overview of the Practicum Engagement
