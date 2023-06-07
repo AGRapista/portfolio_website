@@ -5,7 +5,7 @@ import Header from './components/header/header';
 import Sidebar from './components/sidebar/sidebar';
 import AboutPage from './components/body/about';
 import ProjectsPage from './components/body/projects';
-import Practicum from './components/practicum';
+import Practicum from './components/body/practicum';
 import Flow from './components/outside/flow';
 
 import useAnimatedText from './components/useAnimatedText';

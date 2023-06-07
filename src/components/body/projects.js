@@ -20,6 +20,8 @@ const ProjectsPage = ({setName, setDesc, setSidebarV}) => {
 
   const [canExpand, setCanExpand] = useState(true);
 
+  const projectImages = [project1img, project2img, project3img, project4img, project5img];
+
   const handleMouseDown = (e) => {
     console.log("mouse down")
     setCanExpand(false);
@@ -107,7 +109,7 @@ const ProjectsPage = ({setName, setDesc, setSidebarV}) => {
   return (
     <div className="col-8 project-page">
       {isFullscreen && (
-        <div className="fullscreen-overlay" onClick={closeFullscreen}>
+        <div className="fullscreen-overlay no-select" onClick={closeFullscreen}>
           <img className="fullscreen-image no-select" draggable="false" src={fullscreenImageSrc} alt="Fullscreen" draggable="false" />
         </div>
       )}
@@ -118,15 +120,20 @@ const ProjectsPage = ({setName, setDesc, setSidebarV}) => {
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseUp}
         style={{ transform: `translate(${translatePos}%, -50%)` }}
       > 
         <div className="no-select" draggable="false" ><h2>What I've developed so far</h2></div>
         <div className="arrowContainer"><div className="leftArrow left"></div></div>
-        <img className="image no-select" src={project1img} alt="Project 1" draggable="false" onClick={() => openFullscreen(project1img, names[0], descs[0])} />
+        { projectImages.map((projectImg, i) => {   
+          return <img className="image no-select" src={projectImg} alt={`Project ${i}`} draggable="false" onClick={() => openFullscreen(projectImg, names[i], descs[i])} /> 
+        })
+        }
+        {/* <img className="image no-select" src={project1img} alt="Project 1" draggable="false" onClick={() => openFullscreen(project1img, names[0], descs[0])} />
         <img className="image no-select" src={project2img} alt="Project 2" draggable="false" onClick={() => openFullscreen(project2img, names[1], descs[1])} />
         <img className="image no-select" src={project3img} alt="Project 3" draggable="false" onClick={() => openFullscreen(project3img, names[2], descs[2])} />
         <img className="image no-select" src={project4img} alt="Project 4" draggable="false" onClick={() => openFullscreen(project4img, names[3], descs[3])} />
-        <img className="image no-select" src={project5img} alt="Project 5" draggable="false" onClick={() => openFullscreen(project5img, names[4], descs[4])} />
+        <img className="image no-select" src={project5img} alt="Project 5" draggable="false" onClick={() => openFullscreen(project5img, names[4], descs[4])} /> */}
       </div>
     </div>
   );
