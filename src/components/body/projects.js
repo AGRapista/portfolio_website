@@ -91,6 +91,7 @@ const ProjectsPage = ({setName, setDesc, setSidebarV}) => {
   }
 
   useEffect(() => {
+    console.log("Init...")
     const imageElements = document.getElementsByClassName("image");
     for (let i = 0; i < imageElements.length; i++) {
         const imageElement = imageElements[i];
