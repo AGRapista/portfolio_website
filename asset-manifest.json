@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio_website/static/css/main.552864f7.css",
+    "main.css": "/portfolio_website/static/css/main.a1eb5d1d.css",
     "main.js": "/portfolio_website/static/js/main.44b3bd52.js",
     "static/media/fitness_instructor.png": "/portfolio_website/static/media/fitness_instructor.de9d8c047507d00e36a1.png",
     "static/media/wizflix.png": "/portfolio_website/static/media/wizflix.d3ebee0db76d3fdc1c96.png",
@@ -17,11 +17,11 @@
     "static/media/email.png": "/portfolio_website/static/media/email.939d256c2b279ab635a1.png",
     "static/media/mern.PNG": "/portfolio_website/static/media/mern.21b48470de43c011be6c.PNG",
     "index.html": "/portfolio_website/index.html",
-    "main.552864f7.css.map": "/portfolio_website/static/css/main.552864f7.css.map",
+    "main.a1eb5d1d.css.map": "/portfolio_website/static/css/main.a1eb5d1d.css.map",
     "main.44b3bd52.js.map": "/portfolio_website/static/js/main.44b3bd52.js.map"
   },
   "entrypoints": [
-    "static/css/main.552864f7.css",
+    "static/css/main.a1eb5d1d.css",
     "static/js/main.44b3bd52.js"
   ]
 }
