@@ -1,10 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio_website/static/css/main.72218b34.css",
-    "main.js": "/portfolio_website/static/js/main.7bbcb580.js",
+    "main.css": "/portfolio_website/static/css/main.a4b0e7eb.css",
+    "main.js": "/portfolio_website/static/js/main.36e2340b.js",
     "static/media/fitness_instructor.png": "/portfolio_website/static/media/fitness_instructor.de9d8c047507d00e36a1.png",
     "static/media/wizflix.png": "/portfolio_website/static/media/wizflix.d3ebee0db76d3fdc1c96.png",
     "static/media/metacrafters4_whole.png": "/portfolio_website/static/media/metacrafters4_whole.91a2ea890a146ecfa198.png",
+    "static/media/cert4.jpg": "/portfolio_website/static/media/cert4.75bc0f4b8ca3fb937e95.jpg",
+    "static/media/cert5.jpg": "/portfolio_website/static/media/cert5.2d791fb5a4868da3751a.jpg",
+    "static/media/cert9.jpg": "/portfolio_website/static/media/cert9.79fa2d10aebed0e409ed.jpg",
+    "static/media/cert8.jpg": "/portfolio_website/static/media/cert8.f4b05d15f5ec0cf58abe.jpg",
+    "static/media/cert10.jpg": "/portfolio_website/static/media/cert10.b2a6b84a00529a07a60d.jpg",
+    "static/media/cert1.jpg": "/portfolio_website/static/media/cert1.f073255e43053f0d8977.jpg",
+    "static/media/cert6.jpg": "/portfolio_website/static/media/cert6.139c5d733d5f9d73c082.jpg",
+    "static/media/cert7.jpg": "/portfolio_website/static/media/cert7.82cff30ada927eec70ed.jpg",
+    "static/media/cert2.jpg": "/portfolio_website/static/media/cert2.975fd1976c23d4271f3c.jpg",
+    "static/media/cert11.jpg": "/portfolio_website/static/media/cert11.b8f628a8dd08f542d873.jpg",
+    "static/media/cert14.jpg": "/portfolio_website/static/media/cert14.8d53c65777d9233ed8b3.jpg",
+    "static/media/cert3.jpg": "/portfolio_website/static/media/cert3.d87f0050bfe62bb6ac62.jpg",
+    "static/media/cert12.jpg": "/portfolio_website/static/media/cert12.9ed1545ea62b744bbaf8.jpg",
+    "static/media/cert13.jpg": "/portfolio_website/static/media/cert13.fb9d176d4a04baf48f0c.jpg",
     "static/media/emppred.PNG": "/portfolio_website/static/media/emppred.f0ec135c3a0a24904aab.PNG",
     "static/media/datawiz.PNG": "/portfolio_website/static/media/datawiz.915c297686a598a03415.PNG",
     "static/media/musings.PNG": "/portfolio_website/static/media/musings.2080ec30b63cc334be89.PNG",
@@ -17,11 +31,11 @@
     "static/media/email.png": "/portfolio_website/static/media/email.939d256c2b279ab635a1.png",
     "static/media/mern.PNG": "/portfolio_website/static/media/mern.21b48470de43c011be6c.PNG",
     "index.html": "/portfolio_website/index.html",
-    "main.72218b34.css.map": "/portfolio_website/static/css/main.72218b34.css.map",
-    "main.7bbcb580.js.map": "/portfolio_website/static/js/main.7bbcb580.js.map"
+    "main.a4b0e7eb.css.map": "/portfolio_website/static/css/main.a4b0e7eb.css.map",
+    "main.36e2340b.js.map": "/portfolio_website/static/js/main.36e2340b.js.map"
   },
   "entrypoints": [
-    "static/css/main.72218b34.css",
-    "static/js/main.7bbcb580.js"
+    "static/css/main.a4b0e7eb.css",
+    "static/js/main.36e2340b.js"
   ]
 }
