@@ -1,4 +1,7 @@
 import React from 'react';
+import 'react-slideshow-image/dist/styles.css'
+import { Slide } from "react-slideshow-image";
+
 import useAnimatedText from '../useAnimatedText';
 
 import metacraftersImg1 from './images/metacrafters1.PNG';
@@ -9,9 +12,26 @@ import metacraftersImg5 from './images/metacrafters5.PNG';
 import metacraftersImg6 from './images/metacrafters6.PNG';
 import mernProject1 from './images/mern.PNG';
 
+import cert1 from './certifications/cert1.jpg';
+import cert2 from './certifications/cert2.jpg';
+import cert3 from './certifications/cert3.jpg';
+import cert4 from './certifications/cert4.jpg';
+import cert5 from './certifications/cert5.jpg';
+import cert6 from './certifications/cert6.jpg';
+import cert7 from './certifications/cert7.jpg';
+import cert8 from './certifications/cert8.jpg';
+import cert9 from './certifications/cert9.jpg';
+import cert10 from './certifications/cert10.jpg';
+import cert11 from './certifications/cert11.jpg';
+import cert12 from './certifications/cert12.jpg';
+import cert13 from './certifications/cert13.jpg';
+import cert14 from './certifications/cert14.jpg';
+
 const Practicum = () => {
     const animatedText = useAnimatedText();
     const docs_url = "https://docs.google.com/document/d/1m2G4qZfyfuGhbhVnM7woTDWhkazuKVMlre5NXKd7csE/preview"
+
+    const certs = [cert1, cert2, cert3, cert4, cert5, cert6, cert7, cert8, cert9, cert10, cert11, cert12, cert13, cert14];
 
     return (
         <div className="col-8 about-page">
@@ -173,6 +193,26 @@ Basic smart contract state data manipulation
                         </div>
                     </div>
 
+                </div>
+
+                <div className="col-12">
+                    <h2 className="animatedText" data-value="Certifications achieved"  style={{ color: "rgb(171, 255, 251)", marginTop: "40px", marginBottom: "40px"}}>
+                        Certifications achieved
+                    </h2>
+                    <div className="certsContainer">
+                        <Slide>
+                            {
+                                certs.map((image) => {
+                                    return <div className="each-slide-effect">
+                                    <div>
+                                        <img src={image}></img>
+                                    </div>
+                                </div>
+                                })
+                            }
+                        </Slide>
+                        <div style={{height: "20px"}}></div>
+                    </div>
                 </div>
 
             </div>

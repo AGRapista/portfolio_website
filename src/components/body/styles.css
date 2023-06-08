@@ -217,3 +217,15 @@ h2, h3 {
       font-weight: bold;
   }
   
+  .each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 700px;
+  }
+
+  .each-slide-effect > div > img {
+    height: 100%;
+  }
+  
