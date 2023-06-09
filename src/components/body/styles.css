@@ -113,8 +113,8 @@ h2, h3 {
 }
 
 .tiltContainerFull {
-    width: 1200px;
-    height: 600px;
+    width: 60vw;
+    height: 60vh;
 }
 
 .no-select {
@@ -128,7 +128,9 @@ h2, h3 {
     left: 0;
     /* width: 100%; */
     margin-top: 10%;
-    margin-left: 20%;
+    margin-left: 25%;
+    width: 60vw;
+    height: 60vh;
     /* height: 100%; */
     /* background-color: rgba(0, 0, 0, 0.8); */
     /* display: flex; */
@@ -139,8 +141,8 @@ h2, h3 {
 
 .fullscreen-image {
     user-select: none;
-    width: 1200px;
-    height: 600px;
+    width: 60vw;
+    height: 60vh;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -226,7 +228,8 @@ h2, h3 {
   }
 
   .each-slide-effect > div > img {
-    height: 100%;
+    height: 80%;
+    width: 100%;
   }
   
   .finalReport {
