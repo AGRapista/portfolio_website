@@ -208,7 +208,7 @@ h2, h3 {
   .projectDesc {
       padding-top: 10px;
       padding-right: 30px;
-      font-size: 20px;
+      font-size: 17px;
       font-family: Arial, Helvetica, sans-serif !important;
       color: rgb(0, 0, 0);
       /* text-align: justify; */
@@ -224,12 +224,16 @@ h2, h3 {
     align-items: center;
     justify-content: center;
     background-size: cover;
-    height: 700px;
+    height: 100%;
   }
 
   .each-slide-effect > div > img {
     height: 80%;
     width: 100%;
+  }
+
+  .col-12 .mt-5 > p {
+      font-size: 10px;
   }
   
   .finalReport {

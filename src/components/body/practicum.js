@@ -246,7 +246,6 @@ const Practicum = () => {
             style={{
               color: "rgb(171, 255, 251)",
               marginTop: "40px",
-              marginBottom: "40px",
             }}
           >
             Certifications
@@ -277,7 +276,7 @@ const Practicum = () => {
           </h2>
           <p
             style={{
-              fontSize: "25px",
+                fontSize: "20px",
               color: "white",
               textAlign: "justify",
               textJustify: "inter-word",
@@ -307,7 +306,7 @@ const Practicum = () => {
           </h2>
           <p
             style={{
-              fontSize: "25px",
+              fontSize: "20px",
               color: "white",
               textAlign: "justify",
               textJustify: "inter-word",
@@ -319,24 +318,26 @@ const Practicum = () => {
             is a decentralized network of connected nodes that validate and
             record transactions using smart contracts. It enables the creation
             and execution of decentralized applications (DApps) and has gained
-            significant popularity in the blockchain space. Avalanche, on the
-            other hand, is a newer blockchain platform that aims to provide
-            scalability, speed, and efficiency for decentralized applications
-            and financial systems. It utilizes a consensus protocol called
-            Avalanche consensus, which allows for quick finality and low
-            transaction fees. In my Metacrafters online courses, I gained
+            significant popularity in the blockchain space. <br /> <br />
+            &nbsp;&nbsp;&nbsp; Avalanche, on the other hand, is a newer
+            blockchain platform that aims to provide scalability, speed, and
+            efficiency for decentralized applications and financial systems. It
+            utilizes a consensus protocol called Avalanche consensus, which
+            allows for quick finality and low transaction fees. <br /> <br />
+            &nbsp;&nbsp;&nbsp;In my Metacrafters online courses, I gained
             insights into the fundamental concepts underlying smart contracts
             and how they operate within blockchain networks. I learned about the
             Ethereum Virtual Machine (EVM), which executes smart contracts on
             the Ethereum blockchain, and the Solidity programming language
-            commonly used to write smart contracts. Naturally, dealing with
-            these decentralized networks / blockchain, I would also learn about
-            crypto wallets. These are applications that would contain unique
-            addresses and allow the secure storage of cryptocurrencies, such as
-            Ethereum (ETH) and other digital assets. Crypto wallets play a
-            crucial role in the decentralized ecosystem by providing a secure
-            and user-friendly interface for managing and interacting with
-            blockchain-based assets.
+            commonly used to write smart contracts.
+            <br /> <br />
+            &nbsp;&nbsp;&nbsp; Naturally, dealing with these decentralized
+            networks / blockchain, I would also learn about crypto wallets.
+            These are applications that would contain unique addresses and allow
+            the secure storage of cryptocurrencies, such as Ethereum (ETH) and
+            other digital assets. Crypto wallets play a crucial role in the
+            decentralized ecosystem by providing a secure and user-friendly
+            interface for managing and interacting with blockchain-based assets.
           </p>
         </div>
 
@@ -350,7 +351,7 @@ const Practicum = () => {
           </h2>
           <p
             style={{
-              fontSize: "25px",
+                fontSize: "20px",
               color: "white",
               textAlign: "justify",
               textJustify: "inter-word",
@@ -416,7 +417,7 @@ const Practicum = () => {
           </h2>
           <p
             style={{
-              fontSize: "25px",
+                fontSize: "20px",
               color: "white",
               textAlign: "justify",
               textJustify: "inter-word",
