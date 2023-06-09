@@ -267,8 +267,192 @@ const Practicum = () => {
           </div>
         </div>
 
+        <div className="col-12 mt-5">
+          <h2
+            className="animatedText"
+            data-value="Synthesis of the Practicum Engagement"
+            style={{ color: "rgb(171, 255, 251)" }}
+          >
+            Synthesis of the Practicum Engagement
+          </h2>
+          <p
+            style={{
+              fontSize: "25px",
+              color: "white",
+              textAlign: "justify",
+              textJustify: "inter-word",
+            }}
+          >
+            &nbsp;&nbsp;&nbsp;My learning path engagement consisted of a diverse
+            range of courses covering a wide spectrum of topics. These courses
+            spanned from Machine Learning, which delves into the study of
+            algorithms and models that enable computers to learn and make
+            predictions, to Web development, which focuses on designing and
+            building interactive websites and web applications. Additionally, I
+            also explored courses related to the Decentralized web, also known
+            as Web 3, which encompasses technologies and concepts that aim to
+            decentralize control and resources. In the sections below, I will
+            detail the strongest and most notable lessons I have acquired during
+            this engagement.
+          </p>
+        </div>
+
+        <div className="col-12 mt-5">
+          <h2
+            className="animatedText"
+            data-value="Web 3 and Smart Contracts"
+            style={{ color: "rgb(171, 255, 251)" }}
+          >
+            Web 3 and Smart Contracts
+          </h2>
+          <p
+            style={{
+              fontSize: "25px",
+              color: "white",
+              textAlign: "justify",
+              textJustify: "inter-word",
+            }}
+          >
+            &nbsp;&nbsp;&nbsp;I learned a great deal about smart contracts and
+            the decentralized web in my Metacrafters online courses,
+            specifically about the Ethereum and Avalanche blockchain. Ethereum
+            is a decentralized network of connected nodes that validate and
+            record transactions using smart contracts. It enables the creation
+            and execution of decentralized applications (DApps) and has gained
+            significant popularity in the blockchain space. Avalanche, on the
+            other hand, is a newer blockchain platform that aims to provide
+            scalability, speed, and efficiency for decentralized applications
+            and financial systems. It utilizes a consensus protocol called
+            Avalanche consensus, which allows for quick finality and low
+            transaction fees. In my Metacrafters online courses, I gained
+            insights into the fundamental concepts underlying smart contracts
+            and how they operate within blockchain networks. I learned about the
+            Ethereum Virtual Machine (EVM), which executes smart contracts on
+            the Ethereum blockchain, and the Solidity programming language
+            commonly used to write smart contracts. Naturally, dealing with
+            these decentralized networks / blockchain, I would also learn about
+            crypto wallets. These are applications that would contain unique
+            addresses and allow the secure storage of cryptocurrencies, such as
+            Ethereum (ETH) and other digital assets. Crypto wallets play a
+            crucial role in the decentralized ecosystem by providing a secure
+            and user-friendly interface for managing and interacting with
+            blockchain-based assets.
+          </p>
+        </div>
+
+        <div className="col-12 mt-5">
+          <h2
+            className="animatedText"
+            data-value="Neural Networks"
+            style={{ color: "rgb(171, 255, 251)" }}
+          >
+            Neural Networks
+          </h2>
+          <p
+            style={{
+              fontSize: "25px",
+              color: "white",
+              textAlign: "justify",
+              textJustify: "inter-word",
+            }}
+          >
+            &nbsp;&nbsp;&nbsp;In my learnings, I have found that to facilitate
+            neural networks at the most basic level is by employing nodes, also
+            called as perceptrons. These nodes are the fundamental building
+            blocks of a neural network and are inspired by the biological
+            neurons found in the human brain. <br />
+            <br />
+            &nbsp;&nbsp;&nbsp; From what I’ve learned, there are three types of
+            layers in an artificial neural network, the input layer, the output
+            layer, and the hidden layers in between. The input layer that serves
+            as the representation of the object to be analyzed by the neural
+            network depending on the use case. The output layer, which contains
+            all the nodes that determine the output of the neural network, in a
+            classification type use case, these would represent all the
+            different possible values that a neural network could classify the
+            input as. Finally, the hidden layers, which gives the neural network
+            the ability to learn. <br />
+            <br />
+            &nbsp;&nbsp;&nbsp; Each node, or perceptron, receives input signals
+            from the previous layer or directly from the input data. These input
+            signals are multiplied by weights, along a given bias. The weighted
+            inputs are then summed together, however, to normalize this sum
+            between zero and one. This is accomplished by the activation
+            function which would constrain the output of values. The nodes
+            between the layers are linked by a connection, every connection has
+            an internal weight which is adjusted for each iteration in the
+            training process. This enables the learning part of the neural
+            network. <br />
+            <br />
+            &nbsp;&nbsp;&nbsp; The neural network is trained by comparing its
+            outputs in the training process with actual data values from the
+            training sets. It learns by adjusting the weights of its connections
+            depending on the error value returned by its cost function. The cost
+            function of a neural network is a measure of how well the network's
+            predictions align with the true values in the training data. It
+            quantifies the overall error or discrepancy between the predicted
+            outputs and the actual outputs. The goal of training the neural
+            network is to minimize this cost function. During the training
+            process, the neural network iteratively updates the weights of its
+            connections using optimization algorithms such as gradient descent.
+            The gradients of the cost function with respect to the network's
+            weights are computed, indicating the direction in which the weights
+            should be adjusted to reduce the cost. By repeatedly feeding the
+            training data through the network, comparing the predicted outputs
+            with the actual outputs, and updating the weights based on the
+            gradients, the network gradually improves its performance and
+            reduces the error. This process is known as backpropagation, as the
+            gradients are computed in a backward pass through the network.
+          </p>
+        </div>
+
+        <div className="col-12 mt-5">
+          <h2
+            className="animatedText"
+            data-value="The MERN Stack"
+            style={{ color: "rgb(171, 255, 251)" }}
+          >
+            The MERN Stack
+          </h2>
+          <p
+            style={{
+              fontSize: "25px",
+              color: "white",
+              textAlign: "justify",
+              textJustify: "inter-word",
+            }}
+          >
+            &nbsp;&nbsp;&nbsp;My learnings also include a dive into the MERN
+            stack, which is a popular web development technology stack used for
+            building full-stack web applications. MERN stands for MongoDB,
+            Express.js, React.js, and Node.js, which are the core technologies
+            used in this stack. <br /> <br />
+            &nbsp;&nbsp;&nbsp;React is a front-end Javascript library that
+            allows the development of user interfaces. In React, the Virtual DOM
+            (Document Object Model) is a virtual representation of the actual
+            DOM. It is a concept and technique used by React to optimize the
+            rendering process and improve performance. When there are updates to
+            the state or props of a component, React compares the new Virtual
+            DOM with the previous one. It identifies the differences and
+            calculates the minimum number of changes needed to update the real
+            DOM efficiently. <br /> <br />
+            &nbsp;&nbsp;&nbsp; Node.js, and Express.js built on top of it,
+            provides the server side functionalities that a web application
+            needs for its operations. These include handling HTTP requests and
+            responses, routing, data storage and retrieval, and other
+            server-side operations. <br /> <br />
+            &nbsp;&nbsp;&nbsp; Finally, MongoDB, which is a document database
+            used to build highly available and scalable internet applications.
+            Unlike relational databases, MongoDB stores data in flexible,
+            JSON-like documents called BSON (Binary JSON), which allows for
+            dynamic and schema-less data modeling. This flexibility enables
+            developers to easily adapt the database structure as their
+            application evolves.
+          </p>
+        </div>
+
         <div className="col-12">
-        <h2
+          <h2
             className="animatedText"
             data-value="Final Report Document"
             style={{
@@ -279,7 +463,12 @@ const Practicum = () => {
           >
             Final Report Document
           </h2>
-          <iframe className="finalReport" src={docs_url} width="100%" height="800px"></iframe>
+          <iframe
+            className="finalReport"
+            src={docs_url}
+            width="100%"
+            height="800px"
+          ></iframe>
         </div>
       </div>
     </div>
