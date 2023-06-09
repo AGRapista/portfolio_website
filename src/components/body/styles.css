@@ -229,3 +229,6 @@ h2, h3 {
     height: 100%;
   }
   
+  .finalReport {
+      height: 90vh;
+  }
