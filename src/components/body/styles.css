@@ -61,6 +61,28 @@ h2, h3 {
     text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+    .about-page {
+        width: 80%;
+        height: 80% !important;
+        top: 20vh;
+        left: 10vw;
+        position: absolute;
+    }
+
+    .fade-in-text {
+        font-size: 15px !important;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .skillBubble {
+        height: 3vh;
+        width: 12vw;
+        font-size: 10px;
+    }
+}
+
 .redirectBtn {
     display: inline-block;
     background-color: rgb(40, 193, 248);

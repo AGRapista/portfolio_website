@@ -26,8 +26,8 @@ const Sidebar = ({ page, setPage, name, desc, sideBarVisible }) => {
   };
 
   return (
-<div className="col-4 sidebar" >
-      <div className="row">
+    <div className="col-8 col-md-4 sidebar" >
+      <div className="row" id="headerContainer">
         <Header name={name} description={desc}/>
       </div>
       <div className="row" style={{ display: sideBarVisible ? "block" : "none" }}>
@@ -39,7 +39,7 @@ const Sidebar = ({ page, setPage, name, desc, sideBarVisible }) => {
             <div className="chainContainer"><Chain page = {page} num = {2}/></div>
           </div>
         </div>
-        <div className="col-10" style={{ display: sideBarVisible ? "block" : "none" }}>
+        <div className="col-10" id="sidebarSelectionsContainer" style={{ display: sideBarVisible ? "block" : "none" }}>
           <p className={`sidebarSelection animatedText no-select ${page === 0 ? 'active' : ''}`} data-value="About me" onClick={() => nextPage(0)}>About me</p>
           <p className={`sidebarSelection animatedText no-select  ${page === 1 ? 'active' : ''}`} data-value="Projects" onClick={() => nextPage(1)}>Projects</p>
           <p className={`sidebarSelection animatedText no-select  ${page === 2 ? 'active' : ''}`} data-value="Practicum" onClick={() => nextPage(2)}>Practicum</p>

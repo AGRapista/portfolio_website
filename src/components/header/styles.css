@@ -25,3 +25,24 @@
 .subName{
     width: 12vw;
 }
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .header > #nameContainer > p {
+        font-size: 30px;
+        margin: 0;
+        padding-bottom: 0; /* Remove the default bottom padding */
+        line-height: 1; 
+        /* width: 100px; */
+    }
+
+    .subName{
+        width: 80vw;
+    }
+
+    .header {
+        margin: 0;
+        padding: 0;
+    }
+  }
