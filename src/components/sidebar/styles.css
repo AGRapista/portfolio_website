@@ -1,7 +1,6 @@
 .sidebar {
     display: block;
     padding-left: 20px;
-    margin-left: 30px;
     height: 100%;
     /* width: 100%; */
     color: white;
@@ -37,7 +36,7 @@
 }
 
 .chainContainer {
-    height: 53px;
+    height: 3.7vh;
     width: 20px;
     margin: 0;
 }
@@ -71,7 +70,7 @@
 
 .chainIndicator {
     position: absolute;
-    top: 13px;
+    top: 1.5vh;
     left: 30px;
     height: 8px;
     width:  8px;
@@ -81,7 +80,8 @@
 
 .sidebarSelection {
     margin-left: 60px;
-    font-size: 3vh;
+    font-size: 2.5vh;
+    margin-bottom: 0;
 }
 
 p {

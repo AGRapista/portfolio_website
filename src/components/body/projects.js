@@ -125,6 +125,11 @@ const ProjectsPage = ({setName, setDesc, setSidebarV}) => {
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseUp}
+
+        onTouchStart={handleMouseDown}
+        onTouchEnd={handleMouseUp}
+        onTouchMove={handleMouseMove}
+
         style={{ transform: `translate(${translatePos}%, -50%)` }}
       > 
         <div className="no-select" draggable="false" ><h2>What I've developed so far</h2></div>

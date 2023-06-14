@@ -139,8 +139,14 @@ button > svg {
     top: 50%;
     transform: translate(0%, -50%);
     margin: 0rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 50;
+}
+
+@media only screen and (max-width: 768px) {
+    #image-track {
+        left: 40%;
+    }
 }
 
 #image-track > .tiltContainer > .image {
