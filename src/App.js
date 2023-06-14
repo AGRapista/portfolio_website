@@ -41,7 +41,7 @@ function App() {
             </div>
         </main>
       </div>
-      <div className="overlap outsideDecor">
+      <div className="outsideDecor">
         <Flow/>
       </div>
     </div>

@@ -25,7 +25,7 @@ const AboutPage = () => {
   return (
     <div className="col-8 col-md-8 about-page">
       <div className="row">
-        <div className="col-12" style={{ marginTop: "15%" }}></div>
+        <div className="col-12" style={{ marginTop: "5%" }}></div>
         <div className="col-12" id="greetingsContainer">
           <h3 className="fade-in-text" style={{ color: "rgb(171, 255, 251)" }}>
             Greetings!

@@ -72,14 +72,14 @@
     position: absolute;
     top: 1.5vh;
     left: 30px;
-    height: 8px;
-    width:  8px;
+    height: 4px;
+    width:  4px;
     border-radius: 50px;
     background-color: rgb(255, 255, 255); 
 }
 
 .sidebarSelection {
-    margin-left: 60px;
+    margin-left: 20px;
     font-size: 2.5vh;
     margin-bottom: 0;
 }
@@ -95,26 +95,36 @@ p {
 @media only screen and (max-width: 768px) {
 
     .sidebar {
-        height: 15vh;
+        height: 100%;
     }
 
     .sidebarSelection {
-        margin: 0px;
+        margin-left: 0vw;
         padding: 0px;
         font-size: 2.2vh;
+        text-align: center;
+        justify-content: center;
+        line-height: 1vh;
     } 
 
     #sidebarSelectionsContainer {
         padding: 0;
         margin-top: 1vh;
+        margin-left: 2vw;
+    }
+
+    .chains {
+        display: flex;
+        width: 100vw;
     }
 
     .chainContainer {
-        height: 3.3vh;
+        height: 1vh;
+        width: 4vw;
     }
 
     .chainIndicator {
-        top: 10px;
-        left: 75px;
+        top: 1.3vh;
+        left: 19vw;
     }    
 }
