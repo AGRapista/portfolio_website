@@ -16,6 +16,7 @@ function App() {
   const [name, setName] = useState("A.G. MATTHEW R.");
   const [desc, setDesc] = useState("Software Developer");
   const [sideBarVisible, setSidebarV] = useState("true");
+  const [count, setCount] = useState(0);
 
   return (
     <div>
@@ -42,7 +43,7 @@ function App() {
         </main>
       </div>
       <div className="outsideDecor">
-        <Flow/>
+        <Flow count={count} setCount={setCount}/>
       </div>
     </div>
   );
