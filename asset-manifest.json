@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_website/static/css/main.b1506ee0.css",
-    "main.js": "/portfolio_website/static/js/main.b8613c4b.js",
+    "main.css": "/portfolio_website/static/css/main.e08d3eac.css",
+    "main.js": "/portfolio_website/static/js/main.49b9913f.js",
     "static/media/fitness_instructor.png": "/portfolio_website/static/media/fitness_instructor.de9d8c047507d00e36a1.png",
     "static/media/wizflix.png": "/portfolio_website/static/media/wizflix.d3ebee0db76d3fdc1c96.png",
     "static/media/metacrafters4_whole.png": "/portfolio_website/static/media/metacrafters4_whole.91a2ea890a146ecfa198.png",
@@ -29,11 +29,11 @@
     "static/media/metacrafters2.PNG": "/portfolio_website/static/media/metacrafters2.6d0ab41741a203c23a68.PNG",
     "static/media/mern.PNG": "/portfolio_website/static/media/mern.21b48470de43c011be6c.PNG",
     "index.html": "/portfolio_website/index.html",
-    "main.b1506ee0.css.map": "/portfolio_website/static/css/main.b1506ee0.css.map",
-    "main.b8613c4b.js.map": "/portfolio_website/static/js/main.b8613c4b.js.map"
+    "main.e08d3eac.css.map": "/portfolio_website/static/css/main.e08d3eac.css.map",
+    "main.49b9913f.js.map": "/portfolio_website/static/js/main.49b9913f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1506ee0.css",
-    "static/js/main.b8613c4b.js"
+    "static/css/main.e08d3eac.css",
+    "static/js/main.49b9913f.js"
   ]
 }
