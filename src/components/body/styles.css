@@ -211,6 +211,34 @@ img {
     padding-right: 10px;
 }
 
+.fullImageContainer {
+    position: absolute;
+    /* background-color: white; */
+    height: 95vh;
+    width: 64.5vw;
+    /* z-index: -1; */
+}
+
+.tiltContainerFull {
+    position: absolute;
+    margin-top: 20vh;
+    left: -10vw;
+
+    /* background-color: aqua; */
+    height: 60vh;
+    width: 70vw;
+
+}
+
+.fullscreen-image {
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff;
+    height: 60vh;
+    width: 70vw;
+}
+
 @media only screen and (max-width: 768px) {
     .projectsContainer{
         height:fit-content;
@@ -240,6 +268,28 @@ img {
         left: 0vw;
         height: 1.3em;
         width: 1.3em;
+    }
+
+    .fullImageContainer{
+        height: 70vh;
+    }
+
+    .tiltContainerFull {
+        position: absolute;
+        margin-top: 20vh;
+        left: 7vw;
+    
+        /* background-color: aqua; */
+        height: 30vh;
+        width: 70vw;
+    }
+    
+    .fullscreen-image {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ffffff;
+        height: 25vh;
+        width: 80vw;
     }
 }
 
